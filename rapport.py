@@ -368,7 +368,8 @@ Also explain how the neural network behave when changing them ?
 TODO
 """
 
+#En faisant varié chaque paramètre je viens à la conclusion suivante :
 #Plus la valeure de minibatch_size est faible, moins l'estimation sera précise.
-#Si le learning rate est trop élevé, alors il y a un problème de fitting.
+#Si le learning rate est trop élevé, alors il y a un problème d'overfitting.
 #Si le nepoch varie, il y aura un problème sur le test accuracy ce qui influera sur l'estimation qui sera moins précise
 
