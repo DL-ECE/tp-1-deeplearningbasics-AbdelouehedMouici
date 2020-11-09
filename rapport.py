@@ -316,7 +316,7 @@ minibatch_size = 10 #5
 nepoch = 9 #10
 learning_rate = 0.01
 
-ffnn = FFNN(config=[784, 99, 99, 10], minibatch_size=minibatch_size, learning_rate=learning_rate) #[784, 110, 110, 10]
+ffnn = FFNN(config=[784, 99, 99, 10], minibatch_size=minibatch_size, learning_rate=learning_rate) #[784, 3, 3, 10]
 
 assert X_train.shape[0] % minibatch_size == 0
 assert X_test.shape[0] % minibatch_size == 0
@@ -367,4 +367,8 @@ Also explain how the neural network behave when changing them ?
 
 TODO
 """
+
+#Plus la valeure de minibatch_size est faible, moins l'estimation sera précise.
+#Si le learning rate est trop élevé, alors il y a un problème de fitting.
+#Si le nepoch varie, il y aura un problème sur le test accuracy ce qui influera sur l'estimation qui sera moins précise
 
